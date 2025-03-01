@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 const routes = [
     {
         name: "Investments",
-        href: "/investments",
+        href: "/dashboard/investments",
         icon: <ShipWheel className="h-4 w-4" />
     },
     {

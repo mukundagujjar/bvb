@@ -8,8 +8,8 @@ import { Oooh_Baby } from "next/font/google"
 const NavbarRoutes = [
     {
         id: 1,
-        title: "Guided coaching",
-        href: "/guided-coaching"
+        title: "How we work",
+        href: "/#how-we-work"
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const Navbar = () => {
 
     return (
         <nav className="relative">
-            <div className="flex justify-between items-center w-full p-6 select-none">
+            <div className="flex justify-between items-center w-full p-6 select-none bg-background text-primary">
                 <Link prefetch href="/" className={`${NavbarFont.className} text-3xl md:text-6xl font-bold`}></Link>
 
                 <div className="hidden lg:flex gap-18 items-center">
@@ -84,6 +84,8 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div
                 className={`
+                    bg-background/80
+                    text-primary
                     lg:hidden 
                     absolute 
                     top-full 
