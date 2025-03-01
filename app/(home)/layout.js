@@ -1,6 +1,7 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/app/Navbar";
+import { Analytics } from "@vercel/analytics/react"
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <div className="w-full flex flex-col gap-8 p-8 mt-[6%]">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );

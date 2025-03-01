@@ -1,6 +1,7 @@
 import { Bricolage_Grotesque } from "next/font/google";
 import "../globals.css";
 import Sidebar from "@/components/app/Sidebar";
+import { Analytics } from "@vercel/analytics/react"
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
@@ -17,6 +18,7 @@ const DashboardLayout = ({ children }) => {
                         {children}
                     </div>
                 </div>
+                <Analytics />
             </body>
         </html>
     );
