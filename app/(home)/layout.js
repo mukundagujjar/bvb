@@ -1,5 +1,6 @@
 import { Bricolage_Grotesque } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Navbar from "@/components/app/Navbar";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
@@ -15,7 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${bricolageGrotesque.className} dark`}>
-        {children}
+        <Navbar />
+        <div className="w-full flex flex-col gap-8 p-8 mt-[6%]">
+          {children}
+        </div>
       </body>
     </html>
   );

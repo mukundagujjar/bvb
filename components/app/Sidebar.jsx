@@ -7,11 +7,12 @@ import { Button } from "@/components/ui/button";
 // import { SignOut } from '@/lib/auth-utils';
 import { Separator } from '@/components/ui/separator';
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
 
 const routes = [
     {
         name: "Investments",
-        href: "/dashboard/investments",
+        href: "/investments",
         icon: <ShipWheel className="h-4 w-4" />
     },
     {
@@ -77,11 +78,9 @@ const Sidebar = () => {
                     </Button>
                 </div>
 
-                {/* <div className="w-full flex items-center justify-center rounded-lg">
-                    <h2 className="text-2xl font-black text-center">Welcome!</h2>
-                </div> */}
-
-                {/* <Separator className="w-full" /> */}
+                <div className="w-full hidden lg:flex items-center justify-center rounded-lg bg-muted py-1">
+                    <Image src="bvb-navbar.svg" alt="logo" width={"200"} height={"200"} />
+                </div>
 
                 {/* Routes */}
                 <div className="w-full flex flex-col items-center justify-center gap-4 overflow-y-auto mt-10 lg:mt-0">
@@ -98,7 +97,7 @@ const Sidebar = () => {
 
                 <div className="w-full mt-auto">
                     <form action={handleLogout}>
-                        <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full cursor-pointer">
                             Logout
                         </Button>
                     </form>
