@@ -7,7 +7,7 @@ const Testimonials = () => {
                 <h2 className="text-4xl font-bold text-center">Testimonials</h2>
 
 
-                <div className="mt-8 px-5 columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+                <div className="px-5 columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
                     {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
                         <figure key={num} className="mb-4 break-inside-avoid w-full">
                             <Image

@@ -3,19 +3,19 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { Rubik_Vinyl } from "next/font/google"
+import { Merriweather } from "next/font/google"
 import Image from "next/image"
 
 const NavbarRoutes = [
-    { id: 1, title: "How we work", href: "/how-we-work" },
+    { id: 1, title: "Our services", href: "/services" },
     { id: 2, title: "About", href: "/about" },
     { id: 3, title: "Contact", href: "/contact" },
     { id: 4, title: "Legal", href: "/legal" }
 ]
 
-const NavbarFont = Rubik_Vinyl({
+const NavbarFont = Merriweather({
     subsets: ["latin"],
-    weight: "400"
+    weight: ["300", "400", "700", "900"]
 })
 
 const Navbar = () => {
@@ -30,9 +30,8 @@ const Navbar = () => {
             {/* Main navbar container */}
             <div className="flex justify-between items-center w-full px-6 py-4">
                 {/* Logo */}
-                <Link href="/" prefetch className={`${NavbarFont.className} text-3xl md:text-6xl font-bold`}>
-                    <Image className="hidden lg:flex" src="/bvb-navbar.svg" alt="Navbar Logo" width={300} height={100} />
-                    <Image className="lg:hidden" src="/bvb-navbar-mobile.svg" alt="Navbar Logo" width={100} height={100} />
+                <Link href="/" prefetch className={`${NavbarFont.className} text-xl md:text-4xl font-extrabold`}>
+                    Bulls v/s Bears
                 </Link>
 
                 {/* Desktop Navigation */}
