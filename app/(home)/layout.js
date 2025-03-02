@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${bricolageGrotesque.className} dark`}>
         <Navbar />
-        <div className="w-full flex flex-col gap-8 p-8 mt-[18%] lg:mt-[6%]">
+        <div className="w-full flex flex-col gap-8 p-8 mt-[18%] lg:mt-[10%]">
           {children}
         </div>
         <Analytics />
