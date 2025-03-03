@@ -11,9 +11,9 @@ const Hero = () => (
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-between">
                 <Button className="md:px-12 md:py-8 px-8 py-4 md:text-2xl font-bold select-none cursor-pointer " asChild>
-                    <Link href="/services">Get started</Link>
+                    <Link href="/contact">Contact us</Link>
                     </Button>
-                <Button variant="outline" asChild className="md:px-12 md:py-8 px-8 py-4 md:text-2xl font-bold select-none cursor-pointer"><Link href="/login">Already a member</Link></Button>
+                <Button variant="outline" asChild className="md:px-12 md:py-8 px-8 py-4 md:text-2xl font-bold select-none cursor-pointer"><Link href="/services">Learn more</Link></Button>
             </div>
             <p className="text-sm opacity-30">* - All returns are subject to market conditions. Please read our legal agreement carefully before any financial dealings and invest wisely.</p>
         </div>

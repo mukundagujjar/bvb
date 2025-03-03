@@ -7,25 +7,28 @@ import {
 
 const questions = [
     {
-        id: 1, title: "How much money will I have to invest?", content: "The minimum investment amount is ₹1,00,000. You can invest more if you wish to. We will charge a 20% commission on the profits made. The investment can be withdrawn after a lock-in period of 3 months.",
+        id: 1, title: "How much money will I have to invest?", content: "The minimum investment amount is ₹1,00,000. You can invest more if you wish to. We will charge a 5% commission on the profits generated for you - not on your total investment. The investment is subject to a recommended lock-in period of 3 months for optimal returns.",
     },
     {
-        id: 2, title: "What does 20% risk mean?", content: "When you invest a particular amount with us, we will majorly trade with 20% of that amount. This means that if you invest ₹1,00,000, we will trade with ₹20,000. This is to ensure that you do not lose all your money in case of a loss incurred during a volatile trading market. The remaining 80% will be used for relatively much safer investments and to regain profit in case of a loss on the riskier trades. But we'll always try and ensure to keep the minimum amount of your balance equal to or more than 80% of the initial investment.",
+        id: 2, title: "What does 20% risk mean?", content: "When you invest with us, 20% of your investment amount is allocated as risk capital used for active trading to generate profits. You should consider this 20% as risk capital that will be used in perpetuity for trading activities. The remaining 80% is kept secure. We guarantee that your account will always maintain at least 80% of your original investment regardless of market conditions. Any profits generated through our trading activities will be added on top of this secure 80%.",
     },
     {
-        id: 3, title: "Why do you get to keep 20% of the profits?", content: "We charge a 20% commission on the profits made to cover the costs of trading, maintaining the dashboard, and providing you with regular updates on your portfolio. This is to ensure that we can continue to provide you with the best service possible. Please remember that we only make money when you make money, since the 20% is part of the profits and not the entire investment. We do not charge any fees if you do not make a profit.",
+        id: 3, title: "How do you make money?", content: "We charge a 5% commission only on the profits generated from your investment, not on your entire investment amount. This means we only make money when you make money. We do not charge any fees if no profits are generated. This aligned incentive structure ensures we are committed to growing your investment.",
     },
     {
-        id: 4, title: "What if I want to withdraw my money before the lock-in period?", content: "The lock-in period ensures we can provide you with the best returns possible. If you wish to withdraw your investment before the lock-in period, you will be charged a 20% penalty on the total investment amount or on the current value of your investment, whichever is higher.",
+        id: 4, title: "What if I want to withdraw my money before the lock-in period?", content: "We recommend a lock-in period of 3 months to ensure we can deliver optimal returns. If you withdraw before completing this period, you will only receive 80% of your original investment. The 20% allocated as risk capital will not be returned as it is committed to active trading strategies.",
     },
     {
-        id: 5, title: "Do you guarantee monthly returns of at least 8%?", content: "Our traders are experienced and have a proven track record of delivering consistent returns. There are times we have provided people with a single day return of 150%. Our average returns have been around 30%. However, we cannot guarantee a fixed return every month. The returns are subject to market conditions and the performance of the trades made. We aim to provide you with the best returns possible, but please remember that all investments carry inherent risk.",
+        id: 5, title: "Do you guarantee monthly returns?", content: "We guarantee a minimum of 8% profit per month (calculated on your total initial investment). Our traders are experienced and have a proven track record of delivering consistent returns. There are instances where we have provided clients with single-day returns of up to 150%. While our average returns have been around 30%, please remember that all investments are subject to market risk. We are not SEBI registered, and you should invest your money wisely.",
     },
     {
-        id: 6, title: "How do I track my investments?", content: "We will provide you with a dashboard where you can track your investments and the performance of the trades made on your behalf. The dashboard will be updated regularly to provide you with the latest information on your portfolio.",
+        id: 6, title: "How do I track my investments?", content: "We provide you with a dashboard where you can track your investments and the performance of the trades made on your behalf. The dashboard is updated regularly to give you visibility into your portfolio's growth and current value.",
     },
     {
-        id: 7, title: "Whom can I contact in case of a query/concern regarding my investment?", content: "You can contact us via our contact page or WhatsApp us directly at +91-7709203276.",
+        id: 7, title: "What other services do you offer besides investment management?", content: "Besides managing investments on your behalf, we offer live trading sessions where you can join us via Google Meet and receive real-time trading calls. You can observe our trading process and learn firsthand. We also offer a comprehensive coaching package that includes three months of free live sessions, teaching you our strategies and methodologies.",
+    },
+    {
+        id: 8, title: "Whom can I contact in case of a query/concern regarding my investment?", content: "You can contact us via our contact page or WhatsApp us directly at +91-7709203276.",
     }
 ]
 

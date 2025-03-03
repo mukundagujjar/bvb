@@ -7,22 +7,22 @@ import { useState, useEffect } from "react"
 const steps = [
     {
         title: "Contact us",
-        content: "We believe in being completely transparent with our clients. In our discussion, you can ask us any questions you may have and gain clarification about the process. You may contact us via our contact page or WhatsApp us directly at +91-7709203276.",
+        content: "We believe in complete transparency with our clients. During our initial discussion, you can ask any questions about our investment approach, risk management strategy, and guaranteed monthly returns. You may contact us via our contact page or WhatsApp us directly at +91-7709203276.",
         icon: PhoneCall
     },
     {
-        title: "You make the investment",
-        content: "Based on your understanding of our process, you make the minimum investment of ₹1,00,000. We will provide you with a payment link and a contract to sign. Once the payment is made, we will start trading on your behalf.",
+        title: "Make your investment",
+        content: "After understanding our process, you can make a minimum investment of ₹1,00,000. We'll provide you with a payment link and contract. Once payment is received, we'll allocate 80% of your investment to secure holdings and use 20% as active trading capital to generate your guaranteed minimum 8% monthly returns.",
         icon: IndianRupee
     },
     {
         title: "Trading and returns",
-        content: "We will trade in various markets on your behalf. For proper tracking, we will provide with a dashboard where you can see your returns. Please refer to our legal page for more information on how we handle your investment and personal data. We will charge a 20% commission on the profits made.",
+        content: "We'll actively trade with your 20% risk capital while keeping 80% of your investment secure. You'll have access to a dashboard showing your returns and portfolio performance. We charge just 5% of profits generated - we only earn when you earn. You're guaranteed a minimum 8% monthly return on your total investment.",
         icon: ChartCandlestick
     },
     {
-        title: "Regular updates",
-        content: "We will provide you with regular updates on your portfolio and the performance of your investments. This will be visible to you on your dashboard. You can withdraw your investment after a lock-in period of 3 months.",
+        title: "Regular updates and growth",
+        content: "We provide regular updates on your portfolio performance through your personalized dashboard. We recommend maintaining your investment for at least 3 months to experience optimal returns. After this period, you can withdraw your funds anytime, including your secure 80% and all accumulated profits.",
         icon: LayoutDashboard
     }
 ]
@@ -52,7 +52,7 @@ const GetStarted = () => {
     return (
         <div className="flex flex-col w-full justify-center">
             <div className="flex flex-col w-full px-4 lg:w-3/4 mx-auto gap-8">
-                <h2 className="text-4xl font-bold text-center">Steps to get started</h2>
+                <h2 className="text-4xl font-bold text-center">Steps to invest with us</h2>
                 {/* Desktop View */}
                 <div className="flex flex-col w-full gap-10">
                     {steps.map((step, index) => (
@@ -68,10 +68,10 @@ const GetStarted = () => {
                                             <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 bg-background outline-2 outline-offset-2">
                                                 <step.icon className="w-6 h-6 text-foreground" />
                                             </div>
-                                            <CardTitle className="text-xl font-semibold text-center">{step.title}</CardTitle>
+                                            <CardTitle className="text-lg md:text-xl font-semibold text-center">{step.title}</CardTitle>
                                         </CardHeader>
                                         <CardContent>
-                                            <p className="text-muted/80 text-center">{step.content}</p>
+                                            <p className="text-sm md:text-md text-muted/80 text-center">{step.content}</p>
                                         </CardContent>
                                     </Card>
                                 </div>

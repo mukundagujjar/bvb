@@ -7,8 +7,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Separator } from "@/components/ui/separator"
 import { useState } from "react"
 const Services = () => {
-    const [ hover, setHover ] = useState(false)
-    const [ hover2, setHover2 ] = useState(false)
+    const [hover, setHover] = useState(false)
+    const [hover2, setHover2] = useState(false)
 
     return (
         <div className="flex flex-col w-full justify-center">
@@ -21,10 +21,10 @@ const Services = () => {
                         <CardHeader>
                             <div className="flex items-center gap-2 mb-2">
                                 <LineChart className="h-6 w-6 text-primary" />
-                                <CardTitle className="text-2xl">Options Trading</CardTitle>
+                                <CardTitle className="text-2xl">Trading Education</CardTitle>
                             </div>
                             <CardDescription className="text-base">
-                                Master the art of options trading with our expert guidance and resources
+                                Learn profitable trading strategies directly from our expert traders
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="flex-1">
@@ -32,28 +32,27 @@ const Services = () => {
                                 <div className={`rounded-lg p-4 bg-purple-500/50`}>
                                     <div className="flex items-center gap-2 mb-2">
                                         <BarChart3 className="h-5 w-5 text-primary" />
-                                        <h3 className="font-semibold text-lg">Live Trading Sessions</h3>
+                                        <h3 className="font-semibold text-lg">Live Trading</h3>
                                     </div>
-                                    <p className="text-muted-foreground">
-                                        Join our live trading sessions where we analyze markets in real-time and execute profitable
-                                        trades.
+                                    <p className="text-sm md:text-md text-muted-foreground">
+                                        Join our live Google Meet sessions where you can watch our trading process in real-time and receive actionable trading opportunities.
                                     </p>
                                     <Separator className={"my-2"} />
-                                    <p className="mt-2 font-bold text-primary">
+                                    <p className="text-md md:text-lg mt-2 font-bold text-primary">
                                         <IndianRupee className="h-4 w-4 inline-block" /> 5,000/month
                                     </p>
                                 </div>
                                 <div className={`rounded-lg p-4 bg-purple-500/50`}>
                                     <div className="flex items-center gap-2 mb-2">
                                         <BookOpen className="h-5 w-5 text-primary" />
-                                        <h3 className="font-semibold text-lg">Comprehensive Course</h3>
+                                        <h3 className="font-semibold text-lg">Coaching</h3>
                                     </div>
-                                    <p className="text-muted-foreground">
-                                        Learn options trading from the ground up with our structured, easy-to-follow course materials.
+                                    <p className="text-sm md:text-md text-muted-foreground">
+                                        Complete trading education with 3 months of FREE live sessions included. Learn our proven strategies that consistently deliver exceptional returns.
                                     </p>
                                     <Separator className={"my-2"} />
-                                    <p className="mt-2 font-bold text-primary">
-                                        <IndianRupee className="h-4 w-4 inline-block" /> 10,000 one-time
+                                    <p className="text-md md:text-lg mt-2 font-bold text-primary">
+                                        <IndianRupee className="h-4 w-4 inline-block" /> 25,000 (one-time)
                                     </p>
                                 </div>
                             </div>
@@ -65,43 +64,42 @@ const Services = () => {
                         <CardHeader>
                             <div className="flex items-center gap-2 mb-2">
                                 <IndianRupee className="h-6 w-6 text-primary" />
-                                <CardTitle className="text-2xl">Investments</CardTitle>
+                                <CardTitle className="text-2xl">Investment Management</CardTitle>
                             </div>
                             <CardDescription className="text-base">
-                                Strategic investment solutions designed to grow and protect your wealth
+                                Let our experts grow your wealth with our guaranteed minimum 8% monthly returns
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="flex-1">
-                            <p className="text-muted-foreground mb-4">
-                                Our investment services are tailored to your financial goals, risk tolerance, and time horizon. We
-                                focus on creating diversified portfolios that deliver consistent returns. These include high frequency trading as well as stable investments.
+                            <p className="text-sm md:text-md text-muted-foreground mb-4">
+                                We allocate 20% of your investment for active trading while keeping 80% secure. Our investment approach guarantees you'll always maintain at least 80% of your initial capital while earning a minimum of 8% profit monthly on your total investment.
                             </p>
-                            <ul className="gap-y-2 mb-4">
+                            <ul className="gap-y-2 mb-4 text-sm md:text-md">
                                 <li className="flex items-start gap-2">
                                     <div className="rounded-full bg-primary/10 p-1 mt-0.5">
                                         <ArrowRight className="h-3 w-3 text-primary" />
                                     </div>
-                                    <span>Investment done by our team of experts on your behalf</span>
+                                    <span>Guaranteed minimum 8% monthly returns on total investment</span>
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <div className="rounded-full bg-primary/10 p-1 mt-0.5">
                                         <ArrowRight className="h-3 w-3 text-primary" />
                                     </div>
-                                    <span>Regular portfolio reviews and adjustments</span>
+                                    <span>We only take 5% of profits generated - not your principal</span>
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <div className="rounded-full bg-primary/10 p-1 mt-0.5">
                                         <ArrowRight className="h-3 w-3 text-primary" />
                                     </div>
-                                    <span>Proper allocation of capital to ensure optimal returns</span>
+                                    <span>80% of your investment always kept secure</span>
                                 </li>
                             </ul>
                         </CardContent>
                         <CardFooter>
                             <div className={`p-3 rounded-lg w-full bg-blue-500/50`}>
-                                <p className="font-bold text-center">
+                                <p className="text-md md:text-lg font-bold text-center">
                                     Minimum Investment:{" "}
-                                    <span className="text-lg">
+                                    <span className="text-md md:text-lg">
                                         <IndianRupee className="h-4 w-4 inline-block" /> 1,00,000
                                     </span>
                                 </p>
@@ -110,7 +108,7 @@ const Services = () => {
                     </Card >
                 </div >
 
-                <Button asChild className='px-8 py-4 md:px-12 md:py-8 md:text-2xl font-bold w-fit mt-8'><Link href="/contact">Contact Us</Link></Button>
+                <Button asChild className='px-8 py-4 md:px-12 md:py-8 md:text-2xl font-bold w-fit mt-8'><Link href="/services">Learn More</Link></Button>
             </div>
         </div>
     )

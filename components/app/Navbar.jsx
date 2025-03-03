@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Merriweather } from "next/font/google"
-import Image from "next/image"
 
 const NavbarRoutes = [
     { id: 1, title: "Our services", href: "/services" },
@@ -26,9 +25,9 @@ const Navbar = () => {
     const linkStyle = `font-semibold px-4 py-2 rounded-lg`
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-background text-primary">
+        <nav className="fixed top-0 left-0 right-0 z-50 text-primary">
             {/* Main navbar container */}
-            <div className="flex justify-between items-center w-full px-6 py-4">
+            <div className="flex justify-between items-center w-full px-8 py-6 bg-background/80 backdrop-blur-xl">
                 {/* Logo */}
                 <Link href="/" prefetch className={`${NavbarFont.className} text-xl md:text-4xl font-extrabold`}>
                     Bulls v/s Bears
@@ -58,24 +57,37 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Navigation */}
-            {isMenuOpen && (
-                <div className="lg:hidden bg-background/80 backdrop-blur-sm rounded-b-lg">
-                    <div className="flex flex-col p-6 space-y-4">
-                        {NavbarRoutes.map(route => (
-                            <Link
-                                key={route.id}
-                                href={route.href}
-                                prefetch
-                                onClick={() => setIsMenuOpen(false)}
-                                className={`${linkStyle} ${pathname === route.href ? 'bg-secondary' : 'hover:bg-muted'}`}
-                            >
-                                {route.title}
-                            </Link>
-                        ))}
-                    </div>
+            {/* Mobile Navigation - with combined fade and slide transition */}
+            <div
+                className={`
+                    lg:hidden 
+                    absolute 
+                    top-full 
+                    left-0 
+                    right-0 
+                    bg-background/80
+                    backdrop-blur-xl
+                    transform
+                    transition-all
+                    duration-300
+                    ease-in-out
+                    ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}
+                `}
+            >
+                <div className="flex flex-col p-6 space-y-4">
+                    {NavbarRoutes.map(route => (
+                        <Link
+                            key={route.id}
+                            href={route.href}
+                            prefetch
+                            onClick={() => setIsMenuOpen(false)}
+                            className={`${linkStyle} ${pathname === route.href ? 'bg-secondary' : 'hover:bg-muted'}`}
+                        >
+                            {route.title}
+                        </Link>
+                    ))}
                 </div>
-            )}
+            </div>
         </nav>
     )
 }
